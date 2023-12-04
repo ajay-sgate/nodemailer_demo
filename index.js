@@ -15,8 +15,8 @@ async function sendMail(){
    const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: process.env.mail,
-            pass: process.env.password
+            user: process.env.mail,   // provide from email here
+            pass: process.env.password   // provide app password here (get this from gmail after activating two-step-auth)
         }
     })
 
